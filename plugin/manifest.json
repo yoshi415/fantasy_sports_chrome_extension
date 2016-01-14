@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Fantasy Sports Helper",
+  "description": "Extension to automate and ease some fantasy sports transactions",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "assets/images/icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": [ "js/background.js" ]
+  }
+
+  "content_scripts": {
+    "matches": [ "http://*/" ]
+  },
+
+  "permissions": [
+    "activeTab"
+  ]
+}
